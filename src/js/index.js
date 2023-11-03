@@ -12,7 +12,7 @@ import propTypes from "prop-types";
 function SimpleCounter (props){
     return (<div className="bigCounter">
         <div className="calendar"> 
-            <i className="fa-regular faClock"></i>
+            <i className="far fa-clock"></i>
         </div>
         <div className="four">{props.digitFour % 10}</div>
         <div className="three">{props.digitThree % 10}</div>        
