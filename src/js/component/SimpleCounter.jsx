@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+//import ".../styles.css"
 
-import "../styles/index.css";
 import propTypes from "prop-types";
+
 
 function SimpleCounter (props){
     return (<div className="bigCounter">
@@ -12,20 +13,15 @@ function SimpleCounter (props){
         <div className="four">{props.digitFour % 10}</div>
         <div className="three">{props.digitThree % 10}</div>        
         <div className="two">{props.digitTwo % 10}</div>
-        <div className="one">{props.digitOne % 10}</div>
-      
-
-
+        <div className="one">{props.digitOne % 10}</div>    
     </div>);
 }
-
 SimpleCounter.propTypes = {
     digitFour: propTypes.number,
     digitThree: propTypes.number,
     digitTwo: propTypes.number,
     digitOne: propTypes.number,
 };
-
 let counter = 0;
 setInterval(function(){
     const four = Math.floor(counter/1000);
